@@ -1,39 +1,26 @@
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import somepackage.Other;
 import somepackage.Some;
+import somethinggreen.AnnotationForExaple;
 import somethinggreen.Contract;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
+import java.lang.annotation.Annotation;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+        Other.saySomthing();
 
-        HashMap<String,Object> map = new HashMap<>();
-map.put("key1", "value");
-map.put("key2", "value");
-map.put("key3", "value");
-map.put("key4", "value");
+        Some some = new Some(" ");
+        System.out.println(some.toString());
+        System.out.println(some.getДаТакТожеМожно());
+        System.out.println(some.noMoreSecrets = "(ಠ_ಠ)");
+        System.out.println(some.count());
+        some.soTellMeAboutInterfaces();
 
-        /*LinkedList list =
-                new LinkedList();
-        list.add("UIGIU");
-        list.add(new Object());
-        list.add(1);
+        Annotation[] some2 = some.getClass().getAnnotations();
+        System.out.println(Arrays.toString(some2));
 
-        for(int i=0; i<list.size();i++){
-            if(list.get(i).getClass().getSimpleName().equals("Object")){
-                System.out.println(list.get(i));
-            }
-        }
 
-        System.out.println(list.get(0));*/
-        for (String s : map.keySet()) {
-            System.out.println(map.get(s));
-        }
-        Contract.staticMethod("");
-
-        System.out.println(map);
     }
 }
